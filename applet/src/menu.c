@@ -118,9 +118,10 @@ const static wchar_t wt_button_man_dial[]   = L"Manual Dial";
 const static wchar_t wt_button_lone_work[]  = L"Lone wk On/Off";
 const static wchar_t wt_button_1750_hz[]    = L"1750hz Tone";
 const static wchar_t wt_button_bklt_en[]    = L"Toggle bklight";
+const static wchar_t wt_button_set_tg[]		= L"Set Talkgroup";
 const static uint8_t button_functions[]     = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a,
                                                0x0b, 0x0c, 0x0d, 0x0e, 0x15, 0x16, 0x17, 0x18, 0x19, 0x1a, 0x1e,
-                                               0x1f, 0x26, 0x50};
+                                               0x1f, 0x26, 0x50, 0x51};
 uint8_t button_selected = 0;
 uint8_t button_function = 0;
 
@@ -1055,6 +1056,7 @@ void select_sidebutton_function_screen(void)
     mn_submenu_add(wt_button_lone_work, set_sidebutton_function);
     mn_submenu_add(wt_button_1750_hz, set_sidebutton_function);
     mn_submenu_add(wt_button_bklt_en, set_sidebutton_function);
+    mn_submenu_add(wt_button_set_tg,set_sidebutton_function);
 
     mn_submenu_finalize();
 }
