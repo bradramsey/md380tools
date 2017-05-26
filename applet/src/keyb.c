@@ -209,7 +209,8 @@ void evaluate_sidekey ( int button_function)							//This is where new functions
 		}
 		case 0x51 :
 		{
-			create_menu_entry_set_tg_screen();
+			// Call the tg entry menu screen(); TODO
+			// create_menu_entry_set_tg_screen();
 		}
 		default:
 			return;
