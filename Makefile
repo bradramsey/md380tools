@@ -129,6 +129,9 @@ dist:
 	cp *.py 99-md380.rules md380-dfu md380-tool $(RELEASE)/python/
 #Clean out some gunk
 	rm -rf $(RELEASE)/__MACOSX
+#Add the latest database
+	"${MAKE}" -C db clean all
+	cp db/stripped.csv $(RELEASE)/callerid.csv
 #Zip it up for distribution.
 	zip -r $(RELEASE).zip $(RELEASE)
 
@@ -142,7 +145,7 @@ dbg:
 	-awk -Wversion 2>/dev/null || awk --version
 	@echo ________
 	@echo Make version
-	make -v
+	"${MAKE}" -v
 	@echo ________
 
 ci: dbg clean 
