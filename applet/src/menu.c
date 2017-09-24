@@ -1136,7 +1136,7 @@ void create_menu_entry_promtg_screen(void)
 {
     mn_submenu_init(wt_promtg);
 
-    if( global_addl_config.promtg == 1 ) {
+    if( global_addl_config.promtg == 0 ) {
         md380_menu_entry_selected = 0;
     } else {
         md380_menu_entry_selected = 1;
@@ -1152,7 +1152,7 @@ void create_menu_entry_micbargraph_screen(void)
 {
     mn_submenu_init(wt_micbargraph);
 
-    if( global_addl_config.micbargraph == 1 ) {
+    if( global_addl_config.micbargraph == 0 ) {
         md380_menu_entry_selected = 0;
     } else {
         md380_menu_entry_selected = 1;
@@ -1168,7 +1168,7 @@ void create_menu_entry_rbeep_screen(void)
 {
     mn_submenu_init(wt_rbeep);
 
-    if( global_addl_config.rbeep == 1 ) {
+    if( global_addl_config.rbeep == 0 ) {
         md380_menu_entry_selected = 0;
     } else {
         md380_menu_entry_selected = 1;
@@ -1341,7 +1341,7 @@ void create_menu_entry_experimental_screen(void)
 {
     mn_submenu_init(wt_experimental);
 
-    if( global_addl_config.experimental == 1 ) {
+    if( global_addl_config.experimental == 0 ) {
         md380_menu_entry_selected = 0;
     } else {
         md380_menu_entry_selected = 1;
