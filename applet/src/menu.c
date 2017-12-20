@@ -85,7 +85,6 @@ const static wchar_t wt_netmon[]            = L"NetMonitor";
 const static wchar_t wt_promtg[]            = L"Promiscuous";
 const static wchar_t wt_edit[]              = L"Edit";
 const static wchar_t wt_edit_dmr_id[]       = L"Edit DMR-ID";
-const static wchar_t wt_set_tg_id[]       = L"Set Talkgroup";
 const static wchar_t wt_no_w25q128[]        = L"No W25Q128";
 
 const static wchar_t wt_micbargraph[]       = L"Mic bargraph";
